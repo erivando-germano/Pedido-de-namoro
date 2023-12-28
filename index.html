@@ -51,6 +51,13 @@
             document.getElementById('resposta').innerHTML = 'Sim! Eu aceito, meu amor. ❤️';
         }
 
+        // Adiciona a mensagem que aparece após 30 segundos
+        setTimeout(function() {
+            console.log('Mensagem após 30 segundos');
+            alert('Você ainda tem dúvidas?');
+            // Adicione aqui qualquer outra ação que você queira realizar após o tempo especificado
+        }, 30000); // 30000 milissegundos = 30 segundos
+
         function mudarPosicao() {
             const buttonNao = document.getElementById('nao');
             const randomX = Math.floor(Math.random() * window.innerWidth);
